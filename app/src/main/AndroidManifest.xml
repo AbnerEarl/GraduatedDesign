@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lifeng.layoutmanager">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 手机震动的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/start"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.Start"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ApplicationLoad"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.FlowActivity" />
+        <activity android:name=".activity.Home" />
+        <activity android:name=".activity.Regesiter" />
+        <activity android:name=".activity.ForggetPassword" />
+        <activity android:name=".activity.AddApp" />
+        <activity android:name=".activity.DeleteApp" />
+        <activity android:name=".activity.DoItApp" />
+        <activity android:name=".activity.DoItComplete"></activity>
+        <activity android:name=".activity.SouSuo"></activity>
+    </application>
+
+</manifest>

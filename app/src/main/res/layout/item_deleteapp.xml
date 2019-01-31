@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appimageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/apptitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/appdelete"
+        android:layout_alignBottom="@+id/appdelete"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/appimageView"
+        android:layout_toRightOf="@+id/appimageView"
+        android:autoText="true"
+        android:enabled="false"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:text="QQ音乐"
+        android:textColor="@android:color/background_dark"
+        android:textSize="14sp"
+        android:typeface="normal" />
+
+    <Button
+        android:id="@+id/appdetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看详情"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/appdelete"
+        android:layout_toStartOf="@+id/appdelete" />
+
+    <Button
+        android:id="@+id/appdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除应用"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/appselect"
+        android:layout_toStartOf="@+id/appselect" />
+
+    <CheckBox
+        android:id="@+id/appselect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/appdetail"
+        android:layout_alignBottom="@+id/appdetail"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:checked="false" />
+
+    <TextView
+        android:id="@+id/appid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/appselect"
+        android:singleLine="true"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+</RelativeLayout>

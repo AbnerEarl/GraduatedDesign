@@ -1,0 +1,35 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.1'
+
+    defaultConfig {
+        applicationId "com.lifeng.layoutmanager"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile files('libary/activation.jar')
+    compile files('libary/additionnal.jar')
+    compile files('libary/bcprov-jdk15on-152.jar')
+    compile files('libary/commons-email-1.2.jar')
+    compile files('libary/ksoap2-android-assembly-3.1.0-jar-with-dependencies.jar')
+    compile files('libary/mail.jar')
+    compile files('libary/MobCommons-2016.0303.1229.jar')
+    compile files('libary/MobTools-2016.0303.1229.jar')
+    compile files('libary/SMSSDK-2.0.2.jar')
+    compile 'com.android.support:appcompat-v7:25.0.1'
+    compile 'com.android.support:recyclerview-v7:25.0.1'
+    testCompile 'junit:junit:4.12'
+}
